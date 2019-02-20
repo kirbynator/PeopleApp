@@ -1,0 +1,11 @@
+<% person = Person.find(params[:id]) %>
+<h1> <%= person.name %> </h1>
+<p> <%= link_to "edit", edit_person_path %>
+<%= link_to "delete", person, method: :delete %>
+<p> 
+<p> Age: <%= person.age %> </p>
+<p> Gender: <%= person.gender %> </p>
+<p> Eye Color: <%= person.eye_color %> </p>
+<p> Hair Color: <%= person.hair_color %> </p>
+<p> Alive: <%= person.alive %> </p>
+</p>
